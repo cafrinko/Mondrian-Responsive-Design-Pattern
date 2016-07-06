@@ -1,0 +1,66 @@
+
+
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box {
+  background-color: black;
+  border: 1px solid red;
+}
+@media only screen and (max-width: 400px) {
+  .box {
+    width: 80vw;
+  }
+
+  #box1 {
+    height: 35vh;
+    margin: 2.5vh 5vw 2.5vh 5vw;
+  }
+
+  #box2, #box3 {
+    height: 15vh;
+    margin: 2.5vh 5vw 2.5vh 5vw;
+  }
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 1000px) {
+  #box1 {
+    height: 35vh;
+    margin-bottom: 5vh;
+  }
+
+  #box2 {
+    height: 35vh;
+    width: 45vw;
+    float: left;
+  }
+
+  #box3 {
+    height: 35vh;
+    width: 45vw;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  #box1 {
+    width: 60vw;
+    height: 50vh;
+    float: left;
+  }
+
+  #box2, #box3 {
+    width: 33vw;
+    height: 23.4vh;
+    float: right;
+    margin: 0 2vw 0 2vw;
+  }
+
+  #box2 {
+    margin-bottom: 3vh;
+  }
+}
